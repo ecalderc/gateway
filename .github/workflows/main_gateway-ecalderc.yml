@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ac521ab23c964ae98ccfb8a42fc7c897 }}/ebercalderon/gateway:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./Dockerfile-Azure
 
   deploy:
     runs-on: ubuntu-latest
